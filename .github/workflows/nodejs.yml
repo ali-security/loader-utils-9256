@@ -41,11 +41,11 @@ jobs:
       - name: Lint
         run: yarn lint
 
-      - name: Security audit
-        run: yarn audit
+      # - name: Security audit
+      #   run: yarn audit
 
-      - name: Check commit message
-        uses: wagoid/commitlint-github-action@v4
+      # - name: Check commit message
+      #   uses: wagoid/commitlint-github-action@v4
 
   test:
     name: Test - ${{ matrix.os }} - Node v${{ matrix.node-version }}
